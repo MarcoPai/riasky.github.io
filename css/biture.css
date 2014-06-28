@@ -47,11 +47,11 @@ li ul {
   margin: 5px 0 10px 0;
 }
 
-img {
+/*img {
   border: 1px solid rgba(0,0,0,0.45);
   background: #fff;
   box-shadow: rgba(0,0,0,1.0) 0px 0px 2px,rgba(255,255,255,0.15) 0px 1px 1px inset;
-}
+}*/
 
 /*-------------------------------------------------------------------------------------------*/
 /* 1. biture: common attribute */
@@ -241,12 +241,14 @@ ul.ext-menu {
 #main-content a, #main-content a:visited {
   padding: 4px;
 }
+/*
 #main-content a:hover {
   border-radius: 4px;
   box-shadow: #258fb8 0px 0px 2px,rgba(255,255,255,0.15) 0px 1px 1px inset;
   background: rgb(33, 143, 211);
   color: #eee;
 }
+*/
 
 #main-content p {
   margin: 0 0 20px 0;
@@ -541,3 +543,6 @@ pre .javascript .function {
 /*-------------------------------------------------------------------------------------------*/
 /* 5. Components */
 /*-------------------------------------------------------------------------------------------*/
+.bdshare-button-style0-24 a, .bdshare-button-style0-24 .bds_more {
+    width: 24px;
+}
