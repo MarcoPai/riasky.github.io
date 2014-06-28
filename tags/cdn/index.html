@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>在github上建立hexo博客系统 | Marco&#39;s Blog</title>
+  <title>Tag: cdn | Marco&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
@@ -11,7 +11,7 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/pure-min.css" type="text/css">
   <link rel="stylesheet" href="/css/biture.css" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 </head>
 
 
@@ -94,26 +94,31 @@
   </div>
 </div>
 
-<div class="tagcloud" id="fbox-tagcloud" style="margin:10px; display:none; overflow: hidden"><a href="/tags/github/" style="font-size: NaNpx;">github</a><a href="/tags/hexo/" style="font-size: NaNpx;">hexo</a><a href="/tags/life/" style="font-size: NaNpx;">life</a></div>
+<div class="tagcloud" id="fbox-tagcloud" style="margin:10px; display:none; overflow: hidden"><a href="/tags/cdn/" style="font-size: NaNpx;">cdn</a><a href="/tags/github/" style="font-size: NaNpx;">github</a><a href="/tags/hexo/" style="font-size: NaNpx;">hexo</a><a href="/tags/javascript/" style="font-size: NaNpx;">javascript</a><a href="/tags/life/" style="font-size: NaNpx;">life</a></div>
 
   </header>
   <div id="main-content" class="wrap">
   <div class="inner">
+    
+<!--<h4 class="archive-title tag">tag: cdn</h4>-->
+
+
+  
     <article class="post">
   <div class="pure-g-r">
 
     <!-- article: meta -->
     <div class="pure-u-1-12 article-meta">
-      <div class="date"><time datetime="2014-06-28T13:29:39.000Z">
+      <div class="date"><time datetime="2014-06-28T14:36:53.000Z">
         <div class="day">28</div>
         <div class="month">6月 2014</div>
       </time></div>
       <div class="article-tags">
         
   
-    <a href='/tags/hexo/' class='pure-button pull-right' style='margin:3px;'>hexo</a>
+    <a href='/tags/javascript/' class='pure-button pull-right' style='margin:3px;'>javascript</a>
   
-    <a href='/tags/github/' class='pure-button pull-right' style='margin:3px;'>github</a>
+    <a href='/tags/cdn/' class='pure-button pull-right' style='margin:3px;'>cdn</a>
   
 
 
@@ -125,69 +130,64 @@
       <header><div class="article-title">
         
   
-    <h1 class="title">在github上建立hexo博客系统</h1>
+    <h1 class="title"><a href="/2014/font-end-CDN-in-China.html">国内前端CDN服务</a></h1>
   
 
       </div></header>
       <div class="article-entry">
         
-          <h2 id="这篇主要是写下我是如何安装hexo这个博客到github上的">这篇主要是写下我是如何安装hexo这个博客到github上的</h2>
-<h3 id="简要说明">简要说明</h3>
-<p>使用hexo作为博客工具的人群，基本上都偏码农。为什么这么说呢？接着往下看就知道了。</p>
-<ol>
-<li>首先本地需要搭建hexo需要NodeJS环境</li>
-<li>除了NodeJS还需要Git</li>
-</ol>
-<h3 id="本地环境">本地环境</h3>
-<h3 id="所需工具">所需工具</h3>
-<h3 id="安装">安装</h3>
-<h3 id="配置">配置</h3>
-<h2 id="_"> </h2>
+          <p>今天在折腾 hexo 中的 Google Fonts 时遇到了无法访问的情况，于是去我之前用的bootcss提供的国内CDN服务列表中招了半天也找到。<br>只好继续百度，然后找到了360提供的国内CDN服务。下面大体说下这两个国内CDN服务的区别：</p>
+<h4 id="BootCSS_CDN">BootCSS CDN</h4>
+<blockquote>
+<p>Bootstrap中文网联合又拍云存储共同推出了开放CDN服务，我们对广泛的前端开源库提供了稳定的存储和带宽的支持，例如Bootstrap、jQuery等。</p>
+</blockquote>
+<h5 id="地址：OpenCDN">地址：<a href="http://open.bootcss.com/" target="_blank" rel="external">OpenCDN</a></h5>
+<h5 id="特点：提供了几乎涵盖了前端开发大部分的前端库资源">特点：提供了几乎涵盖了前端开发大部分的前端库资源</h5>
+<h4 id="360_CDN">360 CDN</h4>
+<h5 id="地址：前端公共库">地址：<a href="http://libs.useso.com/" target="_blank" rel="external">前端公共库</a></h5>
+<h5 id="特点：">特点：</h5>
+<ul>
+<li>除了常用的前端库外，还提供了Google公共库和Google字体</li>
+<li>速度很快</li>
+</ul>
+<h4 id="友情提示">友情提示</h4>
+<p>鉴于页面中同域最多2个请求的限制，建议页面中如果需要引用多个资源的话，还是分不同的CDN比较好，这样速度会加快不少。当然一定要确保核心资源优先加载哦！</p>
 
         
       </div>
 
-        <!-- 百度分享 -->
-        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
-        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","tqq","weixin","qzone","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","tqq","weixin","qzone","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-        <!-- 百度分享结束 -->
 
 
-      <footer><div class="article-comment">
+
+      <footer>
+          <!-- 百度分享 -->
+          <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","tqq","weixin","qzone","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","tqq","weixin","qzone","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <!-- 百度分享结束 -->
+
+          <div class="article-comment">
         
-<section id="comment">
-
-    <nav id="pagination" >
-        
-        
-        <a href="/2014/06/28/Its-my-life/" class="alignright next" >下一页</a>
-        
-        <div class="clearfix"></div>
-    </nav>
-
-    <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="" data-title="在github上建立hexo博客系统" data-url="http://marcopai.com/2014/06/28/about-hexo-on-github/"></div>
-    <!-- 多说评论框 end -->
-    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-    <script type="text/javascript">
-        var duoshuoQuery = {short_name:"marcopai"};
-        (function() {
-            var ds = document.createElement('script');
-            ds.type = 'text/javascript';ds.async = true;
-            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-            ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0]
-                    || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
-    </script>
-    <!-- 多说公共JS代码 end -->
-</section>
-
 
       </div></footer>
     </div>
   </div>
 </article>
+
+  
+
+  <div class="pure-g-r bitpager">
+  <div class="pure-u-1-12"></div>
+  <div class="pure-u-1-4">
+    
+  </div>
+  <div class="pure-u-5-12"></div>
+  <div class="pure-u-1-4">
+    
+  </div>
+</div>
+
+
+
 
   </div>
   </div>
@@ -206,7 +206,7 @@
   </footer>
 <!-- Le javascript -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="http://cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.min.js"></script>
 
 <!-- Responsive menu -->
 <script>

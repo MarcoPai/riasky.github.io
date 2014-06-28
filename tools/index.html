@@ -11,7 +11,7 @@
   <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/pure-min.css" type="text/css">
   <link rel="stylesheet" href="/css/biture.css" type="text/css">
-  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <!--[if lt IE 9]><script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script><![endif]-->
 </head>
 
 
@@ -94,7 +94,7 @@
   </div>
 </div>
 
-<div class="tagcloud" id="fbox-tagcloud" style="margin:10px; display:none; overflow: hidden"><a href="/tags/github/" style="font-size: NaNpx;">github</a><a href="/tags/hexo/" style="font-size: NaNpx;">hexo</a><a href="/tags/life/" style="font-size: NaNpx;">life</a></div>
+<div class="tagcloud" id="fbox-tagcloud" style="margin:10px; display:none; overflow: hidden"><a href="/tags/cdn/" style="font-size: NaNpx;">cdn</a><a href="/tags/github/" style="font-size: NaNpx;">github</a><a href="/tags/hexo/" style="font-size: NaNpx;">hexo</a><a href="/tags/javascript/" style="font-size: NaNpx;">javascript</a><a href="/tags/life/" style="font-size: NaNpx;">life</a></div>
 
   </header>
   <div id="main-content" class="wrap">
@@ -102,6 +102,76 @@
     
 <!--<h4 class="archive-title category">tag: tools</h4>-->
 
+
+  
+    <article class="post">
+  <div class="pure-g-r">
+
+    <!-- article: meta -->
+    <div class="pure-u-1-12 article-meta">
+      <div class="date"><time datetime="2014-06-28T14:36:53.000Z">
+        <div class="day">28</div>
+        <div class="month">6月 2014</div>
+      </time></div>
+      <div class="article-tags">
+        
+  
+    <a href='/tags/javascript/' class='pure-button pull-right' style='margin:3px;'>javascript</a>
+  
+    <a href='/tags/cdn/' class='pure-button pull-right' style='margin:3px;'>cdn</a>
+  
+
+
+      </div>
+    </div>
+
+    <!-- article: main -->
+    <div class="pure-u-11-12">
+      <header><div class="article-title">
+        
+  
+    <h1 class="title"><a href="/2014/font-end-CDN-in-China.html">国内前端CDN服务</a></h1>
+  
+
+      </div></header>
+      <div class="article-entry">
+        
+          <p>今天在折腾 hexo 中的 Google Fonts 时遇到了无法访问的情况，于是去我之前用的bootcss提供的国内CDN服务列表中招了半天也找到。<br>只好继续百度，然后找到了360提供的国内CDN服务。下面大体说下这两个国内CDN服务的区别：</p>
+<h4 id="BootCSS_CDN">BootCSS CDN</h4>
+<blockquote>
+<p>Bootstrap中文网联合又拍云存储共同推出了开放CDN服务，我们对广泛的前端开源库提供了稳定的存储和带宽的支持，例如Bootstrap、jQuery等。</p>
+</blockquote>
+<h5 id="地址：OpenCDN">地址：<a href="http://open.bootcss.com/" target="_blank" rel="external">OpenCDN</a></h5>
+<h5 id="特点：提供了几乎涵盖了前端开发大部分的前端库资源">特点：提供了几乎涵盖了前端开发大部分的前端库资源</h5>
+<h4 id="360_CDN">360 CDN</h4>
+<h5 id="地址：前端公共库">地址：<a href="http://libs.useso.com/" target="_blank" rel="external">前端公共库</a></h5>
+<h5 id="特点：">特点：</h5>
+<ul>
+<li>除了常用的前端库外，还提供了Google公共库和Google字体</li>
+<li>速度很快</li>
+</ul>
+<h4 id="友情提示">友情提示</h4>
+<p>鉴于页面中同域最多2个请求的限制，建议页面中如果需要引用多个资源的话，还是分不同的CDN比较好，这样速度会加快不少。当然一定要确保核心资源优先加载哦！</p>
+
+        
+      </div>
+
+
+
+
+      <footer>
+          <!-- 百度分享 -->
+          <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","tqq","weixin","qzone","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","tqq","weixin","qzone","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <!-- 百度分享结束 -->
+
+          <div class="article-comment">
+        
+
+      </div></footer>
+    </div>
+  </div>
+</article>
 
   
     <article class="post">
@@ -130,35 +200,93 @@
       <header><div class="article-title">
         
   
-    <h1 class="title"><a href="/2014/06/28/about-hexo-on-github/">在github上建立hexo博客系统</a></h1>
+    <h1 class="title"><a href="/2014/about-hexo-on-github.html">在github上建立hexo博客系统</a></h1>
   
 
       </div></header>
       <div class="article-entry">
         
-          <h2 id="这篇主要是写下我是如何安装hexo这个博客到github上的">这篇主要是写下我是如何安装hexo这个博客到github上的</h2>
-<h3 id="简要说明">简要说明</h3>
-<p>使用hexo作为博客工具的人群，基本上都偏码农。为什么这么说呢？接着往下看就知道了。</p>
+          <p><a href="//hexo.io">Hexo</a> 一个台湾人写的NodeJS下的博客系统</p>
+<p>为什么非得是hexo，而不是Wordpress或者其他的PHP的博客系统呢？<br>其实就是为了能提高点逼格而已，哈哈。<br>基本上使用hexo作为博客工具的人群，都些码农，尤其是前端码农。为什么这么说呢？接着往下看就知道了。</p>
 <ol>
-<li>首先本地需要搭建hexo需要NodeJS环境</li>
-<li>除了NodeJS还需要Git</li>
+<li>hexo的本地环境是NodeJS</li>
+<li>版本当然用的时Git咯</li>
+<li>新建、静态化、发布等等工作都是命令行</li>
+<li>支持Markdown和Swig语法（当然，后者我没用过）</li>
 </ol>
-<h3 id="本地环境">本地环境</h3>
-<h3 id="所需工具">所需工具</h3>
-<h3 id="安装">安装</h3>
-<h3 id="配置">配置</h3>
-<h2 id="_"> </h2>
+<p>就以上这几点，是不是很有前端范儿啊！</p>
+<p>其实有关hexo的安装与配置也没啥好说的，毕竟网上有关github上搭建hexo博客的文章很多，重点可以参考两篇：</p>
+<ol>
+<li>这是我最初看到的：粉丝日志里面的<a href="http://blog.fens.me/hexo-blog-github/" target="_blank" rel="external">Hexo在github上构建免费的Web应用</a>;</li>
+<li>后来又找到了这篇：<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank" rel="external">hexo系列教程：（二）搭建hexo博客</a></li>
+</ol>
+<p>好了，只说说我在折腾时遇到的问题吧：</p>
+<ol>
+<li>我本地环境：Mac OS 10.9 / NodeJS 0.10.29 / npm 1.4.14 / hexo 2.7.1</li>
+<li>第一步安装的时候一定要加上sudo，否则会权限报错滴<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>$ <span class="built_in">sudo</span> npm install hexo -g
+</pre></td></tr></table></figure></li>
+<li><p>对于Mac用户来说会有个比较蛋疼的问题，也是我装了N遍都不成功的原因，在<a href="http://hexo.io/docs/" target="_blank" rel="external">官网</a>专门针对Mac用户做了下面的提醒：</p>
+<blockquote>
+<p>You may encounter some problems when compiling. Please install Xcode from App Store first. After Xcode is installed, open Xcode and go to <strong>Preferences -&gt; Download -&gt; Command Line Tools -&gt; Install</strong> to install command line tools.</p>
+</blockquote>
+</li>
+<li><p>按照教程把本地都配置完了之后，开始弄github，这里遇到两个问题，一个是域名的解析，一个是github上面cname文件，下面大体说下放到github需要做哪些事情：<br> 1) github上新建一个和自己名字想同的项目名，比如我的riasky.github.io<br> 2) ping一下项目地址，拿到ip后在域名解析中增加一条A记录指向这个ip：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>$ ping riasky.github.io
+</pre></td></tr></table></figure>
+
+<blockquote>
+<p>当然也可以直接CNAME @ 指向 riasky.github.io，好处是如果换IP的话，就不用重新指定了</p>
+</blockquote>
+<p> 3) 在github项目中增加一个CNAME文件，这里需要注意的是，网上的教程都是让你直接在项目中增加一个无后缀名的CNAME文件，里面写上你的域名：</p>
+ <figure class="highlight text"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>marcopai<span class="preprocessor">.com</span>
+www<span class="preprocessor">.marcopai</span><span class="preprocessor">.com</span>
+</pre></td></tr></table></figure>
+
+<blockquote>
+<p>遇到的问题：</p>
+<ul>
+<li>但是当执行<code>hexo deploy</code>的时候，会将整个项目文件替换为 <code>hexo generate</code> 生成的静态文件，也就是说你之前单独建立的CNAME文件会被删除掉（就这个问题折腾了我好几个小时）.</li>
+<li>我的办法是在hexo项目文件夹根目录下的source文件夹内新增这个CNAME文件，这样的话，每次deploy的时候就会把这个文件一同带上了</li>
+</ul>
+</blockquote>
+<p> 4) 执行hexo的静态化</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>$ hexo generate
+</pre></td></tr></table></figure>
+
+<p> 5) 执行同步到github上</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>$ hexo deploy
+</pre></td></tr></table></figure>
+</li>
+<li><p>都安排妥当了，发了几篇日志后准备在网上看看效果，突然发现页面打开的超级慢，打开firebug的网络工具发现有几个fonts.googleapis.com的请求一直加载中。 没办法只能找替代了，总不能让所有访问的人都翻墙吧：<br> Google Fonts 服务：<a href="http://yusi123.com/3062.html" target="_blank" rel="external">Google Open Sans字体无法加载</a> 搜索 <code>fonts.googleapis.com</code> 替换为 <code>fonts.useso.com</code></p>
+<p> 至于Google无法访问的问题，还是多百度一下吧 <a href="http://www.admin10000.com/document/4615.html" target="_blank" rel="external">不用翻墙的Google镜像</a></p>
+<p> 这里推荐几个国内的前端CDN库：</p>
+<ul>
+<li><a href="http://libs.useso.com/" target="_blank" rel="external">360cdn</a></li>
+<li><a href="http://open.bootcss.com/" target="_blank" rel="external">bootcss</a></li>
+</ul>
+<p>更多有关CDN的内容请参考：<a href="/2014/font-end-CDN-in-China.html">国内前端CDN服务</a> </p>
+</li>
+</ol>
 
         
       </div>
 
-        <!-- 百度分享 -->
-        <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
-        <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","tqq","weixin","qzone","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","tqq","weixin","qzone","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-        <!-- 百度分享结束 -->
 
 
-      <footer><div class="article-comment">
+
+      <footer>
+          <!-- 百度分享 -->
+          <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a></div>
+          <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tsina","tqq","weixin","qzone","renren"],"viewText":"分享到：","viewSize":"16"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tsina","tqq","weixin","qzone","renren"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+          <!-- 百度分享结束 -->
+
+          <div class="article-comment">
         
 
       </div></footer>
@@ -198,7 +326,7 @@
   </footer>
 <!-- Le javascript -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="http://cdn.bootcss.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="/js/jquery.min.js"></script>
 
 <!-- Responsive menu -->
 <script>
