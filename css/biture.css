@@ -180,8 +180,8 @@ ul.nav-menu li:hover ul.sub-menu {
 }
 
 ul.ext-menu {
-  position: relative;
-  top: 3px;
+  /*position: relative;*/
+  /*top: 3px;*/
   float: right;
 }
 #menu-toggle {
