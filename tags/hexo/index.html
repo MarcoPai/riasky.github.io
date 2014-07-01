@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   
-  <title>MacbookAir 内置键盘和触控板失灵的解决办法 | Marco&#39;s Blog</title>
+  <title>Tag: hexo | Marco&#39;s Blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
@@ -103,21 +103,28 @@
   </header>
   <div id="main-content" class="wrap">
   <div class="inner">
+    
+<!--<h4 class="archive-title tag">tag: hexo</h4>-->
+
+
+  
     <article class="post">
   <div class="pure-g-r">
 
     <!-- article: meta -->
     <div class="pure-u-1-12 article-meta">
-      <div class="date"><time datetime="2014-06-30T07:58:56.000Z">
-        <div class="day">30</div>
+      <div class="date"><time datetime="2014-06-28T13:29:39.000Z">
+        <div class="day">28</div>
         <div class="month">6月 2014</div>
       </time></div>
       <div class="article-tags">
         
   
-    <a href='/tags/Macbook-Air/' class='pure-button pull-right' style='margin:3px;'>Macbook Air</a>
+    <a href='/tags/hexo/' class='pure-button pull-right' style='margin:3px;'>hexo</a>
   
-    <a href='/tags/MacOS/' class='pure-button pull-right' style='margin:3px;'>MacOS</a>
+    <a href='/tags/github/' class='pure-button pull-right' style='margin:3px;'>github</a>
+  
+    <a href='/tags/markdown/' class='pure-button pull-right' style='margin:3px;'>markdown</a>
   
 
 
@@ -129,26 +136,79 @@
       <header><div class="article-title">
         
   
-    <h1 class="title">MacbookAir 内置键盘和触控板失灵的解决办法</h1>
+    <h1 class="title"><a href="/2014/about-hexo-on-github.html">在github上建立hexo博客系统</a></h1>
   
 
       </div></header>
       <div class="article-entry">
         
-          <p>绝对的蛋疼啊，今天也没干什么，我的MBA的键盘和触控板就突然罢工了。刚开始以为是加载资源太多死机了，就强行关机后重启。起来之后就傻眼了，系统弹出来一个无法找到键盘和鼠标的提示窗。无奈之下找来了其他蓝牙键盘和鼠标，还真能识别，就先凑合着用吧。</p>
-<p>当时想要真是只能用外接的话就太SB了点，总不能每天背着MBA的同时再背上个键盘和鼠标吧。。。。</p>
-<p>百度上找了很多方法都不行什么重启的时候按住 Option + Command + p + r，结果出来和提示打开apple鼠标电源和apple键盘电源的提示。。。</p>
-<p>后来还是翻墙去Google看了下，有一篇文章(<a href="http://www.zhoushuguang.com/2014/06/macbook.html" target="_blank" rel="external">Macbook Air的键盘和触控板全部失灵的解决办法</a>, 好像要翻墙才能看)里面介绍说关机后按左侧的 Shift + Control + Option + 电源键，我也试了几次还是不行，一案电脑就关机。</p>
-<p>最后只好打Apple的400客服电话来求助了。经过客服MM耐心的指导下用了不到10分钟的时间，竟然搞定了，感谢Apple的客服MM。</p>
-<p>下面是Apple给出的解决方案：</p>
+          <p><a href="//hexo.io">Hexo</a> 一个台湾人写的NodeJS下的博客系统</p>
+<p>为什么非得是hexo，而不是Wordpress或者其他的PHP的博客系统呢？<br>其实就是为了能提高点逼格而已，哈哈。<br>基本上使用hexo作为博客工具的人群，都些码农，尤其是前端码农。为什么这么说呢？接着往下看就知道了。</p>
 <ol>
-<li><p>重置电源<br> 1.1 插上电源<br> 1.2 按住左侧的 shift + control + option + 开关键；<br> 1.3 15秒后放手见到电源灯转绿色，表示重置完成。</p>
+<li>hexo的本地环境是NodeJS</li>
+<li>版本当然用的时Git咯</li>
+<li>新建、静态化、发布等等工作都是命令行</li>
+<li>支持Markdown和Swig语法（当然，后者我没用过）</li>
+</ol>
+<p>就以上这几点，是不是很有前端范儿啊！</p>
+<p>其实有关hexo的安装与配置也没啥好说的，毕竟网上有关github上搭建hexo博客的文章很多，重点可以参考两篇：</p>
+<ol>
+<li>这是我最初看到的：粉丝日志里面的<a href="http://blog.fens.me/hexo-blog-github/" target="_blank" rel="external">Hexo在github上构建免费的Web应用</a>;</li>
+<li>后来又找到了这篇：<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank" rel="external">hexo系列教程：（二）搭建hexo博客</a></li>
+</ol>
+<p>好了，只说说我在折腾时遇到的问题吧：</p>
+<ol>
+<li>我本地环境：Mac OS 10.9 / NodeJS 0.10.29 / npm 1.4.14 / hexo 2.7.1</li>
+<li>第一步安装的时候一定要加上sudo，否则会权限报错滴<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>$ <span class="built_in">sudo</span> npm install hexo -g
+</pre></td></tr></table></figure></li>
+<li><p>对于Mac用户来说会有个比较蛋疼的问题，也是我装了N遍都不成功的原因，在<a href="http://hexo.io/docs/" target="_blank" rel="external">官网</a>专门针对Mac用户做了下面的提醒：</p>
+<blockquote>
+<p>You may encounter some problems when compiling. Please install Xcode from App Store first. After Xcode is installed, open Xcode and go to <strong>Preferences -&gt; Download -&gt; Command Line Tools -&gt; Install</strong> to install command line tools.</p>
+</blockquote>
 </li>
-<li><p>重置数据<br> 2.1 按开机键；<br> 2.2 开机亮屏前，同时按住 command + option + p + r；<br> 2.3 听到3~4声启动声后（系统会频繁重启，等到3~4次后），双手放开；<br> 2.4 等待系统自动开机；</p>
+<li><p>按照教程把本地都配置完了之后，开始弄github，这里遇到两个问题，一个是域名的解析，一个是github上面cname文件，下面大体说下放到github需要做哪些事情：<br> 1) github上新建一个和自己名字想同的项目名，比如我的riasky.github.io<br> 2) ping一下项目地址，拿到ip后在域名解析中增加一条A记录指向这个ip：</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>$ ping riasky.github.io
+</pre></td></tr></table></figure>
+
+<blockquote>
+<p>当然也可以直接CNAME @ 指向 riasky.github.io，好处是如果换IP的话，就不用重新指定了</p>
+</blockquote>
+<p> 3) 在github项目中增加一个CNAME文件，这里需要注意的是，网上的教程都是让你直接在项目中增加一个无后缀名的CNAME文件，里面写上你的域名：</p>
+ <figure class="highlight text"><table><tr><td class="gutter"><pre>1
+2
+</pre></td><td class="code"><pre>marcopai<span class="preprocessor">.com</span>
+www<span class="preprocessor">.marcopai</span><span class="preprocessor">.com</span>
+</pre></td></tr></table></figure>
+
+<blockquote>
+<p>遇到的问题：</p>
+<ul>
+<li>但是当执行<code>hexo deploy</code>的时候，会将整个项目文件替换为 <code>hexo generate</code> 生成的静态文件，也就是说你之前单独建立的CNAME文件会被删除掉（就这个问题折腾了我好几个小时）.</li>
+<li>我的办法是在hexo项目文件夹根目录下的source文件夹内新增这个CNAME文件，这样的话，每次deploy的时候就会把这个文件一同带上了</li>
+</ul>
+</blockquote>
+<p> 4) 执行hexo的静态化</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>$ hexo generate
+</pre></td></tr></table></figure>
+
+<p> 5) 执行同步到github上</p>
+ <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
+</pre></td><td class="code"><pre>$ hexo deploy
+</pre></td></tr></table></figure>
+</li>
+<li><p>都安排妥当了，发了几篇日志后准备在网上看看效果，突然发现页面打开的超级慢，打开firebug的网络工具发现有几个fonts.googleapis.com的请求一直加载中。 没办法只能找替代了，总不能让所有访问的人都翻墙吧：<br> Google Fonts 服务：<a href="http://yusi123.com/3062.html" target="_blank" rel="external">Google Open Sans字体无法加载</a> 搜索 <code>fonts.googleapis.com</code> 替换为 <code>fonts.useso.com</code></p>
+<p> 至于Google无法访问的问题，还是多百度一下吧 <a href="http://www.admin10000.com/document/4615.html" target="_blank" rel="external">不用翻墙的Google镜像</a></p>
+<p> 这里推荐几个国内的前端CDN库：</p>
+<ul>
+<li><a href="http://libs.useso.com/" target="_blank" rel="external">360cdn</a></li>
+<li><a href="http://open.bootcss.com/" target="_blank" rel="external">bootcss</a></li>
+</ul>
+<p>更多有关CDN的内容请参考：<a href="/2014/font-end-CDN-in-China.html">国内前端CDN服务</a> </p>
 </li>
 </ol>
-<p>问题算是解决了，其实网上说的那2个方法都有道理只不过是他俩组合起来才管用。<br>还有就是baidu的搜索结果真的不敢恭维，还是Google的结果更靠谱些。</p>
-<p>幸好现在没问题了，之前想如果真解决不了的话，恐怕就真的要攒钱换本子了！</p>
 
         
       </div>
@@ -164,39 +224,27 @@
 
           <div class="article-comment">
         
-<section id="comment">
-
-    <nav id="pagination" >
-        
-        
-        <a href="/2014/font-end-CDN-in-China.html" class="alignright next" >下一页</a>
-        
-        <div class="clearfix"></div>
-    </nav>
-
-    <!-- 多说评论框 start -->
-    <div class="ds-thread" data-thread-key="" data-title="MacbookAir 内置键盘和触控板失灵的解决办法" data-url="http://marcopai.com/2014/MacbookAir-keyboard-and-Trackpad-failure.html"></div>
-    <!-- 多说评论框 end -->
-    <!-- 多说公共JS代码 start (一个网页只需插入一次) -->
-    <script type="text/javascript">
-        var duoshuoQuery = {short_name:"marcopai"};
-        (function() {
-            var ds = document.createElement('script');
-            ds.type = 'text/javascript';ds.async = true;
-            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-            ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0]
-                    || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
-    </script>
-    <!-- 多说公共JS代码 end -->
-</section>
-
 
       </div></footer>
     </div>
   </div>
 </article>
+
+  
+
+  <div class="pure-g-r bitpager">
+  <div class="pure-u-1-12"></div>
+  <div class="pure-u-1-4">
+    
+  </div>
+  <div class="pure-u-5-12"></div>
+  <div class="pure-u-1-4">
+    
+  </div>
+</div>
+
+
+
 
   </div>
   </div>
