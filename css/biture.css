@@ -86,7 +86,6 @@ blockquote {
   background-color: rgba(102,128,153,0.05);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-    border-radius:5px;
 
 }
 blockquote p:last-child {
@@ -317,7 +316,6 @@ article {
     border-bottom: #e0e0e0 3px solid;
     border-top: #e0e0e0 1px solid;
     border-left: #e0e0e0 1px solid;
-    border-radius:5px;
 
 
     text-align: center;
@@ -400,7 +398,6 @@ article {
 .article-entry .highlight{
     background-image:linear-gradient(to top, #555, #333);
     box-shadow: 0 5px 10px rgba(125, 125, 125, 0.7);
-    border-radius:5px;
 }
 .article-entry li pre,
 .article-entry li .highlight {
@@ -596,4 +593,10 @@ pre .javascript .function {
 /*-------------------------------------------------------------------------------------------*/
 .bdshare-button-style0-24 a, .bdshare-button-style0-24 .bds_more {
     width: 24px;
+}
+
+blockquote,
+.article-meta .date,
+.article-entry .highlight{
+    border-radius:5px;
 }
