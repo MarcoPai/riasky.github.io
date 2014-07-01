@@ -86,6 +86,8 @@ blockquote {
   background-color: rgba(102,128,153,0.05);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+    border-radius:5px;
+
 }
 blockquote p:last-child {
   margin: 0 !important;
@@ -310,9 +312,17 @@ article {
 .article-meta .date {
   display: block;
   margin: 15px 15px 15px 0;
-  padding: 5px 5px 0 0;
-  border-right: #aaa 3px solid;
-  text-align: center;
+  padding: 5px 5px 0 5px;
+  border-right: #ddd 3px solid;
+    border-bottom: #e0e0e0 3px solid;
+    border-top: #e0e0e0 1px solid;
+    border-left: #e0e0e0 1px solid;
+    border-radius:5px;
+
+
+    text-align: center;
+    color: #bbb;
+    background-color: #f5f5f5;
 }
 .article-meta .date .day {
   font: normal bold 28px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
@@ -374,7 +384,7 @@ article {
 /* Code, Pre [landscape](http://goo.gl/hnwXeD) */
 .article-entry pre,
 .article-entry .highlight {
-  background: #494949;
+  /*background: #494949;*/
   margin: -10px 0 10px 0;
   padding: 15px 20px;
   border-style: solid;
@@ -385,6 +395,12 @@ article {
   line-height: 22.400000000000002px;
   font-size: 14px;
   text-shadow: none;
+
+}
+.article-entry .highlight{
+    background-image:linear-gradient(to top, #555, #333);
+    box-shadow: 0 5px 10px rgba(125, 125, 125, 0.7);
+    border-radius:5px;
 }
 .article-entry li pre,
 .article-entry li .highlight {
