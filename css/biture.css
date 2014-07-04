@@ -573,7 +573,7 @@ pre .javascript .function {
 .bitpager a {
   display: inline-block;
   padding: 5px 10px;
-  background: #ddd;
+  /*background: #ddd;*/
   color: #999;
   font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
   text-shadow: 0 0 1px #fff;
