@@ -600,3 +600,48 @@ blockquote,
 .article-entry .highlight{
     border-radius:5px;
 }
+
+.sidebar {
+    width: 120px;
+    position: fixed;
+    left: 10px;
+    top: 75px;
+    z-index: 1;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    padding:20px 5px;
+}
+
+.circle{
+    border-radius:70px;
+    width:80px;
+    height:auto;
+    /*margin-bottom: 20px;*/
+    max-width: 100%;
+}
+
+#site-title {
+    font-size: 14px;
+}
+.menu-navigation-container{
+    /*text-align: right;*/
+}
+
+.sidebar ul {
+    margin: 0; padding: 0;
+}
+
+.widget nav, #branding {
+    padding-bottom: 10px;
+    box-shadow:0 5px 8px -5px rgba(0, 0, 0, 0.075);
+}
+.widget  h3{
+    font-size: 14px;
+    color: #bbbbbb;
+}
+.widget li {
+    list-style: none;
+}
+#site-title {
+    color: #bbbbbb;
+}
