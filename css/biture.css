@@ -572,13 +572,13 @@ pre .javascript .function {
 /* pagination */
 .bitpager a {
   display: inline-block;
-  padding: 5px 20px;
+  padding: 5px 50px;
   /*background: #ddd;*/
   color: #999;
   font-family: "Lato", Helvetica Neue, Helvetica, Arial, sans-serif;
   text-shadow: 0 0 1px #fff;
   margin-bottom: 20px;
-  border-radius: 10px;
+  border-radius: 30px;
 }
 
 .bitpager a:hover{
