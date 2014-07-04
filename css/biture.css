@@ -652,3 +652,6 @@ blockquote,
 #site-title {
     color: #bbbbbb;
 }
+.sidebar a:hover{
+    color: #f60;
+}
