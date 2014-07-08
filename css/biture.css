@@ -247,6 +247,7 @@ ul.ext-menu {
     position: static;
     margin: 0;
     padding: 0;
+      overflow: hidden;
   }
 
   ul.nav-menu ul.sub-menu li,
@@ -654,4 +655,15 @@ blockquote,
 }
 a:hover{
     color: #f60;
+}
+
+@media all and (max-width: 700px) {
+    .bdsharebuttonbox {
+        display: none;
+    }
+    .sidebar{
+        position: static;
+        border-radius: 0;
+        width: auto;
+    }
 }
