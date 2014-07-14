@@ -667,3 +667,7 @@ a:hover{
         width: auto;
     }
 }
+
+.sidebar_qrcode {
+    width: 100px;
+}
