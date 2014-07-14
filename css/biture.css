@@ -612,7 +612,7 @@ blockquote,
 .sidebar {
     width: 120px;
     position: fixed;
-    right: 10px;
+    left: 10px;
     top: 75px;
     z-index: 1;
     background-color: #FFFFFF;
