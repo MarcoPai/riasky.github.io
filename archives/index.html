@@ -114,6 +114,58 @@
 
     <!-- article: meta -->
     <div class="pure-u-1-12 article-meta">
+      <div class="date"><time datetime="2014-07-15T03:36:55.000Z">
+        <div class="day">15</div>
+        <div class="month">7月 2014</div>
+      </time></div>
+      <div class="article-tags">
+        
+  
+    <a href='/tags/javascript/' class='pure-button pull-right' style='margin:3px;'>javascript</a>
+  
+
+
+      </div>
+    </div>
+
+    <!-- article: main -->
+    <div class="pure-u-11-12">
+      <header><div class="article-title">
+        
+  
+    <h1 class="title"><a href="/blog/YUIDoc-to-JavaScript.html">[搬砖]用YUIDoc制作JavaScript文档手册</a></h1>
+  
+
+      </div></header>
+      <div class="article-entry">
+        
+          <p>转自:<a href="http://www.iunbug.com/archives/2012/06/07/296.html" target="_blank" rel="external">[译]用YUIDoc文档化JavaScript代码</a></p>
+<p>文档化你的JS代码有点类似于测试； 我们都意识到要这么做，但我们都不确定怎么做，大多数人都没有做，但其实我们非常支持这么做。<a href="http://yui.github.com/yuidoc/" target="_blank" rel="external">YUIDoc</a>正是应付这个问题的最佳方案，那么，本教程将使你快速掌握它。</p>
+<h3 id="YUIDoc是什么?">YUIDoc是什么?</h3>
+<blockquote>
+<p>YUIDoc会根据你写的代码注释生成API文档。</p>
+</blockquote>
+<p><a href="http://yui.github.com/yuidoc/" target="_blank" rel="external">YUIDoc</a> 是个NodeJS 应用能将你JS代码中的注释生成HTML格式的API文档。实事上，不仅是JS，任何支持块注释（指/<em> </em>/）的语言都能用。 我想你也猜到了，YUIDoc是Yahoo出品的，跟鼎鼎大名的YUI一起的。</p>
+<p>要安装YUIDoc，你要用npm先安装好NodeJS然后使用命令npm -g install yuidocjs 即可安装YUIDoc。通过命令yuidoc <path to="" js="" folder="">来使用；详细内容下面接着讲。</p>
+
+          <a href="http://marcopai.com/blog/YUIDoc-to-JavaScript.html">Read More</a>
+        
+      </div>
+
+
+
+        
+
+    </div>
+  </div>
+</article>
+
+  
+    <article class="post">
+  <div class="pure-g-r">
+
+    <!-- article: meta -->
+    <div class="pure-u-1-12 article-meta">
       <div class="date"><time datetime="2014-07-10T09:33:56.000Z">
         <div class="day">10</div>
         <div class="month">7月 2014</div>
@@ -355,120 +407,6 @@
 </article>
 
   
-    <article class="post">
-  <div class="pure-g-r">
-
-    <!-- article: meta -->
-    <div class="pure-u-1-12 article-meta">
-      <div class="date"><time datetime="2014-06-28T13:29:39.000Z">
-        <div class="day">28</div>
-        <div class="month">6月 2014</div>
-      </time></div>
-      <div class="article-tags">
-        
-  
-    <a href='/tags/hexo/' class='pure-button pull-right' style='margin:3px;'>hexo</a>
-  
-    <a href='/tags/github/' class='pure-button pull-right' style='margin:3px;'>github</a>
-  
-    <a href='/tags/markdown/' class='pure-button pull-right' style='margin:3px;'>markdown</a>
-  
-
-
-      </div>
-    </div>
-
-    <!-- article: main -->
-    <div class="pure-u-11-12">
-      <header><div class="article-title">
-        
-  
-    <h1 class="title"><a href="/blog/about-hexo-on-github.html">在github上建立hexo博客系统</a></h1>
-  
-
-      </div></header>
-      <div class="article-entry">
-        
-          <p><a href="//hexo.io">Hexo</a> 一个台湾人写的NodeJS下的博客系统</p>
-<p>为什么非得是hexo，而不是Wordpress或者其他的PHP的博客系统呢？<br>其实就是为了能提高点逼格而已，哈哈。<br>基本上使用hexo作为博客工具的人群，都些码农，尤其是前端码农。为什么这么说呢？接着往下看就知道了。</p>
-<ol>
-<li>hexo的本地环境是NodeJS</li>
-<li>版本当然用的时Git咯</li>
-<li>新建、静态化、发布等等工作都是命令行</li>
-<li>支持Markdown和Swig语法（当然，后者我没用过）</li>
-</ol>
-<p>就以上这几点，是不是很有前端范儿啊！</p>
-<p>其实有关hexo的安装与配置也没啥好说的，毕竟网上有关github上搭建hexo博客的文章很多，重点可以参考两篇：</p>
-<ol>
-<li>这是我最初看到的：粉丝日志里面的<a href="http://blog.fens.me/hexo-blog-github/" target="_blank" rel="external">Hexo在github上构建免费的Web应用</a>;</li>
-<li>后来又找到了这篇：<a href="http://zipperary.com/2013/05/28/hexo-guide-2/" target="_blank" rel="external">hexo系列教程：（二）搭建hexo博客</a></li>
-</ol>
-<p>好了，只说说我在折腾时遇到的问题吧：</p>
-<ol>
-<li>我本地环境：Mac OS 10.9 / NodeJS 0.10.29 / npm 1.4.14 / hexo 2.7.1</li>
-<li>第一步安装的时候一定要加上sudo，否则会权限报错滴<figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ <span class="built_in">sudo</span> npm install hexo -g
-</pre></td></tr></table></figure></li>
-<li><p>对于Mac用户来说会有个比较蛋疼的问题，也是我装了N遍都不成功的原因，在<a href="http://hexo.io/docs/" target="_blank" rel="external">官网</a>专门针对Mac用户做了下面的提醒：</p>
-<blockquote>
-<p>You may encounter some problems when compiling. Please install Xcode from App Store first. After Xcode is installed, open Xcode and go to <strong>Preferences -&gt; Download -&gt; Command Line Tools -&gt; Install</strong> to install command line tools.</p>
-</blockquote>
-</li>
-<li><p>按照教程把本地都配置完了之后，开始弄github，这里遇到两个问题，一个是域名的解析，一个是github上面cname文件，下面大体说下放到github需要做哪些事情：<br> 1) github上新建一个和自己名字想同的项目名，比如我的riasky.github.io<br> 2) ping一下项目地址，拿到ip后在域名解析中增加一条A记录指向这个ip：</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ ping riasky.github.io
-</pre></td></tr></table></figure>
-
-<blockquote>
-<p>当然也可以直接CNAME @ 指向 riasky.github.io，好处是如果换IP的话，就不用重新指定了</p>
-</blockquote>
-<p> 3) 在github项目中增加一个CNAME文件，这里需要注意的是，网上的教程都是让你直接在项目中增加一个无后缀名的CNAME文件，里面写上你的域名：</p>
- <figure class="highlight text"><table><tr><td class="gutter"><pre>1
-2
-</pre></td><td class="code"><pre>marcopai<span class="preprocessor">.com</span>
-www<span class="preprocessor">.marcopai</span><span class="preprocessor">.com</span>
-</pre></td></tr></table></figure>
-
-<blockquote>
-<p>遇到的问题：</p>
-<ul>
-<li>但是当执行<code>hexo deploy</code>的时候，会将整个项目文件替换为 <code>hexo generate</code> 生成的静态文件，也就是说你之前单独建立的CNAME文件会被删除掉（就这个问题折腾了我好几个小时）.</li>
-<li>我的办法是在hexo项目文件夹根目录下的source文件夹内新增这个CNAME文件，这样的话，每次deploy的时候就会把这个文件一同带上了</li>
-</ul>
-</blockquote>
-<p> 4) 执行hexo的静态化</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo generate
-</pre></td></tr></table></figure>
-
-<p> 5) 执行同步到github上</p>
- <figure class="highlight bash"><table><tr><td class="gutter"><pre>1
-</pre></td><td class="code"><pre>$ hexo deploy
-</pre></td></tr></table></figure>
-</li>
-<li><p>都安排妥当了，发了几篇日志后准备在网上看看效果，突然发现页面打开的超级慢，打开firebug的网络工具发现有几个fonts.googleapis.com的请求一直加载中。 没办法只能找替代了，总不能让所有访问的人都翻墙吧：<br> Google Fonts 服务：<a href="http://yusi123.com/3062.html" target="_blank" rel="external">Google Open Sans字体无法加载</a> 搜索 <code>fonts.googleapis.com</code> 替换为 <code>fonts.useso.com</code></p>
-<p> 至于Google无法访问的问题，还是多百度一下吧 <a href="http://www.admin10000.com/document/4615.html" target="_blank" rel="external">不用翻墙的Google镜像</a></p>
-<p> 这里推荐几个国内的前端CDN库：</p>
-<ul>
-<li><a href="http://libs.useso.com/" target="_blank" rel="external">360cdn</a></li>
-<li><a href="http://open.bootcss.com/" target="_blank" rel="external">bootcss</a></li>
-</ul>
-<p>更多有关CDN的内容请参考：<a href="/2014/font-end-CDN-in-China.html">国内前端CDN服务</a> </p>
-</li>
-</ol>
-
-        
-      </div>
-
-
-
-        
-
-    </div>
-  </div>
-</article>
-
-  
 
   <div class="pure-g-r bitpager">
   <div class="pure-u-1-12"></div>
@@ -506,7 +444,7 @@ www<span class="preprocessor">.marcopai</span><span class="preprocessor">.com</s
   
 <nav class="tagcloud">
   <h3 class="title">标签云</h3>
-  <div class="tagcloud" id="fbox-tagcloud"><a href="/tags/MacOS/" style="font-size: 12.00px;">MacOS</a><a href="/tags/Macbook-Air/" style="font-size: 12.00px;">Macbook Air</a><a href="/tags/cdn/" style="font-size: 12.00px;">cdn</a><a href="/tags/github/" style="font-size: 12.00px;">github</a><a href="/tags/hexo/" style="font-size: 12.00px;">hexo</a><a href="/tags/javascript/" style="font-size: 24.00px;">javascript</a><a href="/tags/life/" style="font-size: 24.00px;">life</a><a href="/tags/markdown/" style="font-size: 12.00px;">markdown</a></div>
+  <div class="tagcloud" id="fbox-tagcloud"><a href="/tags/MacOS/" style="font-size: 12.00px;">MacOS</a><a href="/tags/Macbook-Air/" style="font-size: 12.00px;">Macbook Air</a><a href="/tags/cdn/" style="font-size: 12.00px;">cdn</a><a href="/tags/github/" style="font-size: 12.00px;">github</a><a href="/tags/hexo/" style="font-size: 12.00px;">hexo</a><a href="/tags/javascript/" style="font-size: 24.00px;">javascript</a><a href="/tags/life/" style="font-size: 18.00px;">life</a><a href="/tags/markdown/" style="font-size: 12.00px;">markdown</a></div>
 </nav>
 
 
