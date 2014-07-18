@@ -46,7 +46,9 @@ p + ul {
 li ul {
   margin: 5px 0 10px 0;
 }
-
+pre {
+    background: none;
+}
 /*img {
   border: 1px solid rgba(0,0,0,0.45);
   background: #fff;
