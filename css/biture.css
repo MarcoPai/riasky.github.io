@@ -673,3 +673,10 @@ a:hover{
 .sidebar_qrcode {
     width: 100px;
 }
+
+.sidebar_btn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    font-size: 1em;
+}

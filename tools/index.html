@@ -572,6 +572,7 @@ www<span class="preprocessor">.marcopai</span><span class="preprocessor">.com</s
 </div>
 
     </div>
+    <a class="sidebar_btn" href="javascript:void(0);"><i class="fa fa-1 fa-minus-square-o"></i></a>
 </div>
 
 <div class="wrap">
@@ -637,6 +638,18 @@ $(document).ready(function() {
     closeClick  : false,
     openEffect  : 'none',
     closeEffect : 'none'
+  });
+
+  $('.sidebar_btn').on('click', function(){
+     var that = $(this), icon = that.find('.fa'), box = that.parent();
+     var item = box.find('#branding, .tagcloud, .other .title');
+     if(icon.hasClass('fa-minus-square-o')){
+        item.fadeOut();
+        icon.removeClass('fa-minus-square-o').addClass('fa-plus-square-o');
+     }else{
+         item.fadeIn();
+         icon.removeClass('fa-plus-square-o').addClass('fa-minus-square-o');
+     }
   });
 })(jQuery);
 </script>
