@@ -214,9 +214,28 @@
 <td>@constructor</td>
 <td>明确一个函数是某个类的构造函数。 </td>
 </tr>
+<tr>
+<td>@type</td>
+<td>指定函数的返回类型。 </td>
+</tr>
+<tr>
+<td>@extends</td>
+<td>指示一个类派生了另一个类。通常JSDoc自己就可以检测出这种信息，不过，在某些情况下则必须使用这个标记。 </td>
+</tr>
+<tr>
+<td>@private</td>
+<td>指示一个类或函数是私有的。私有类和函数不会出现在HTML文档中，除非运行JSDoc时提供了—private命令行选项。</td>
+</tr>
+<tr>
+<td>@final</td>
+<td>指示一个值是常量值。要记住JavaScript无法真正保证一个值是常量。 </td>
+</tr>
+<tr>
+<td>@ignore</td>
+<td>JSDoc会忽略有这个标记的函数。</td>
+</tr>
 </tbody>
 </table>
-<p>@type                  指定函数的返回类型。<br>@extends             指示一个类派生了另一个类。通常JSDoc自己就可以检测出这种信息，不过，在某些情况下则必须使用这个标记。<br>@private              指示一个类或函数是私有的。私有类和函数不会出现在HTML文档中，除非运行JSDoc时提供了—private命令行选项。<br>@final                  指示一个值是常量值。要记住JavaScript无法真正保证一个值是常量。<br>@ignore             JSDoc会忽略有这个标记的函数。</p>
 <h3 id="Tag_Dictionary">Tag Dictionary</h3>
 <p>@abstract (synonyms: @virtual)<br>This member must be implemented (or overridden) by the inheritor.<br>@access<br>Specify the access level of this member (private, public, or protected).<br>@alias<br>Treat a member as if it had a different name.<br>@augments (synonyms: @extends)<br>This object adds onto a parent object.<br>@author<br>Identify the author of an item.<br>@borrows<br>This object uses something from another object.<br>@callback<br>Document a callback function.<br>@class (synonyms: @constructor)<br>This function is intended to be called with the “new” keyword.<br>@classdesc<br>Use the following text to describe the entire class.<br>@constant (synonyms: @const)<br>Document an object as a constant.<br>@constructs<br>This function member will be the constructor for the previous class.<br>@copyright<br>Document some copyright information.<br>@default (synonyms: @defaultvalue)<br>Document the default value.<br>@deprecated<br>Document that this is no longer the preferred way.<br>@description (synonyms: @desc)<br>Describe a symbol.<br>@enum<br>Document a collection of related properties.<br>@event<br>Document an event.<br>@example<br>Provide an example of how to use a documented item.<br>@exports<br>Identify the member that is exported by a JavaScript module.<br>@external (synonyms: @host)<br>Document an external class/namespace/module.<br>@file (synonyms: @fileoverview, @overview)<br>Describe a file.<br>@fires (synonyms: @emits)<br>Describe the events this method may fire.<br>@function (synonyms: @func, @method)<br>Describe a function or method.<br>@global<br>Document a global object.<br>@ignore<br>[todo] Remove this from the final output.<br>@inner<br>Document an inner object.<br>@instance<br>Document an instance member.<br>@kind<br>What kind of symbol is this?<br>@lends<br>Document properties on an object literal as if they belonged to a symbol with a given name.<br>@license<br>[todo] Document the software license that applies to this code.<br>@link<br>Inline tag - create a link.<br>@member (synonyms: @var)<br>Document a member.<br>@memberof<br>This symbol belongs to a parent symbol.<br>@mixes<br>This object mixes in all the members from another object.<br>@mixin<br>Document a mixin object.<br>@module<br>Document a JavaScript module.<br>@name<br>Document the name of an object.<br>@namespace<br>Document a namespace object.<br>@param (synonyms: @arg, @argument)<br>Document the parameter to a function.<br>@private<br>This symbol is meant to be private.<br>@property (synonyms: @prop)<br>Document a property of an object.<br>@protected<br>This member is meant to be protected.<br>@public<br>This symbol is meant to be public.<br>@readonly<br>This symbol is meant to be read-only.<br>@requires<br>This file requires a JavaScript module.<br>@returns (synonyms: @return)<br>Document the return value of a function.<br>@see<br>Refer to some other documentation for more information.<br>@since<br>When was this feature added?<br>@static<br>Document a static member.<br>@summary<br>A shorter version of the full description.<br>@this<br>What does the ‘this’ keyword refer to here?<br>@throws (synonyms: @exception)<br>Describe what errors could be thrown.<br>@todo<br>Document tasks to be completed.<br>@tutorial<br>Insert a link to an included tutorial file.<br>@type<br>Document the type of an object.<br>@typedef<br>Document a custom type.<br>@variation<br>Distinguish different objects with the same name.<br>@version<br>Documents the version number of an item.</p>
 
